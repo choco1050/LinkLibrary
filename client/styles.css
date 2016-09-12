@@ -1,0 +1,64 @@
+/* CSS declarations go here */
+.hidden_div {
+	display:none;
+	margin-top:40px;
+}
+.navbar-brand {
+	font-size: 180%;
+	margin-top: 30px;
+}
+ol {
+	list-style-type:none;
+	counter-reset:section;
+}
+ol li,
+.info {
+    counter-increment: section;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #F8F8F8;
+}
+
+ol li::before {
+    content: counter(section);
+    margin-right: 5px;
+    font-size: 80%;
+    background-color: #3388BB;
+    color: white;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 3px;
+}
+
+.info {
+	color:black;
+	text-align:center;
+}
+.info a {
+	color:blue;
+	text-decoration: underline;
+}
+.website-meta {
+	float:right;
+}
+.website-meta span {
+	font-weight: bold;
+}
+.toggle-website-form,
+#website_form,
+.info {
+    margin-bottom: 10px;
+}
+
+#login-buttons {
+    float: right;
+    margin-top: 15px;
+}
+
+#url {
+    float: right;
+    width: 50%;
+    margin-right: 5px;
+}
